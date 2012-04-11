@@ -1,0 +1,10 @@
+{
+    "name": "ringo-sqlite",
+    "version": "0.0.1",
+    "description": "SQLite client for RingoJS",
+    "author": "Justin Bradford <jb@companydatatrees.com>",
+    "jars": [
+        "jars/sqlitejdbc-v056.jar"
+    ],
+    "main": "index.js"
+}
