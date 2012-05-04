@@ -87,4 +87,4 @@ Finally, you can explicitly close the connection:
 
 ## License
 
-This module is under the MIT license, and the included SQLite JDBC jar is under the similar ISC license.
+This module is under the MIT license, and the included SQLite JDBC jar is under Apache License v2.
