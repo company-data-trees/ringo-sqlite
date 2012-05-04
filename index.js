@@ -23,7 +23,8 @@ function prepare_statement(s, values) {
     values.forEach(function(value, index) {
         switch (typeof value) {
             case 'undefined':
-                s.setNull(index + 1);
+                s.setNull(index + 1, java.sql.Types.NULL);
+                break;
             case 'number':
                 (parseFloat(value) == parseInt(value)) ?
                     s.setLong(index + 1, value) :
@@ -34,7 +35,7 @@ function prepare_statement(s, values) {
                 break;
             case 'object':
                 if (value === null) {
-                    s.setNull(index + 1);
+                    s.setNull(index + 1, java.sql.Types.NULL);
                     break;
                 }
 
