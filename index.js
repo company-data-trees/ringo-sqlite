@@ -1,7 +1,7 @@
 var fs = require('fs');
 var {merge} = require('ringo/utils/objects');
 
-var jar = fs.resolve(module.path, './jars/sqlitejdbc-v056.jar');
+var jar = fs.resolve(module.path, './jars/sqlite-jdbc-3.7.2.jar');
 addToClasspath(jar);
 
 var dm = java.sql.DriverManager;
